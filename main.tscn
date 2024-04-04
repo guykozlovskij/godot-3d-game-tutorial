@@ -29,6 +29,7 @@ mob_scene = ExtResource("2_0urxg")
 
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(-1, 0, 0, 0, -1, 0, 0, 0, -1, 2.08165e-12, -1, 2.08165e-12)
+collision_layer = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.130615, 0.00531006)

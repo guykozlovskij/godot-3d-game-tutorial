@@ -7,6 +7,8 @@
 size = Vector3(1, 0.915161, 2.39929)
 
 [node name="Mob" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_asmbw")
 
 [node name="Pivot" type="Node3D" parent="."]
@@ -19,6 +21,7 @@ shape = SubResource("BoxShape3D_68qf8")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.429837)
+layers = 2
 aabb = AABB(-1.16651, -1, -1.82549, 2.33303, 2, 3.65098)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]
